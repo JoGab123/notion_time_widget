@@ -1,4 +1,4 @@
-<div id="clock"></div>
+<div id="clock" style="font-size: 24px; color: #333;"></div>
 
 <script>
 function updateTime() {
@@ -11,4 +11,12 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+function updateClockStyle(fontSize, color) {
+  var clock = document.getElementById('clock');
+  clock.style.fontSize = fontSize;
+  clock.style.color = color;
+}
+
+updateClockStyle('24px', '#333');
 </script>
